@@ -1,5 +1,7 @@
 # Server Log Anomaly Detection (Demo)
 
+![CI](https://github.com/rudhrestam/server-log-anomaly-detection/actions/workflows/ci.yml/badge.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 Most outages don't start with a server falling over. They start with one host throwing a few more errors than usual, another getting quietly slower, a third getting worse by the hour while every dashboard still looks mostly green. The hard part is rarely collecting the logs — it's noticing the change early, on the right host, with enough evidence attached that the person on call believes the alert. This project builds that situation from scratch: a week of synthetic server logs, three different faults planted in known places, and two detectors scored honestly on whether they find them.
 
 > This is a personal portfolio project exploring log anomaly detection. It is built on 100% synthetic data with original code, and does not represent work done for any employer. It is a generic demo, not a model of any real system.
@@ -71,7 +73,7 @@ Prints the anomaly report and saves a copy to `anomaly_report.txt`.
 
 ## Tech stack
 
-Python · NumPy · pandas · scikit-learn (IsolationForest)
+Python 3.10+ · NumPy · pandas · scikit-learn (IsolationForest)
 
 ## Ideas for extension
 
